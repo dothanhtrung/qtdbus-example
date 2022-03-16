@@ -1,0 +1,14 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+        "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/abc/defgh/child">
+    <interface name="org.example.Examples.ChildInterface">
+        <method name="wakeup"/>
+        <method name="say">
+            <arg name="word" type="string"/>
+        </method>
+
+        <signal name="message">
+            <arg name="word" type="string"/>
+        </signal>
+    </interface>
+</node>
